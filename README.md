@@ -1,5 +1,7 @@
 ## Guide
 
+Pour lancer le microservice Vagrant up !
+
 # Utiliser visual studio pour visualiser les dossier sur la vm vagrant crée
 
 Acces au dossier du server vagrant modif du ssh config
