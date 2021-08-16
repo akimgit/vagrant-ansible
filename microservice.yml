@@ -1,0 +1,27 @@
+- hosts: docker
+  gather_facts: yes
+  become: yes
+
+  tasks:
+  - name: instalation git
+    apt:
+      name: git
+
+  - name: installation de docker compose
+    apt: 
+      name: docker-compose
+  - name: Création du dossier contenant la clé ssh
+    file: 
+      path: /home/vagrant/Projet-final
+      owner: vagrant
+      group: root 
+      mode: 0755 
+      state: directory
+  - name: Utilisation du module git pour cloner le contenu du repot git
+    ansible.builtin.git:
+      repo: 'https://github.com/akimgit/projet_docker_groupevert.git' 
+      dest: /home/vagrant/Projet-final
+  - name: Deploiement
+    command: docker-compose up -d
+    args:
+      chdir: /home/vagrant/Projet-final

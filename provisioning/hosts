@@ -1,0 +1,2 @@
+[server]
+docker ansible_ssh_host=192.168.1.42 ansible_ssh_port=22
