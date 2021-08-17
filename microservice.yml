@@ -10,7 +10,7 @@
   - name: installation de docker compose
     apt: 
       name: docker-compose
-  - name: Création du dossier contenant la clé ssh
+  - name: Création du dossier du projet
     file: 
       path: /home/vagrant/Projet-final
       owner: vagrant
