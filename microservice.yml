@@ -19,7 +19,7 @@
       state: directory
   - name: Utilisation du module git pour cloner le contenu du repot git
     ansible.builtin.git:
-      repo: 'https://github.com/akimgit/projet_docker_groupevert.git' 
+      repo: 'https://gitlab.com/boloubna/projet_docker_grp_vert.git' 
       dest: /home/vagrant/Projet-final
   - name: Deploiement
     command: docker-compose up -d
