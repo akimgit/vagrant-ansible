@@ -1,8 +1,5 @@
----                                                                            
-                                                                               
-script_path: 'scripts'
+---
 ansible_playbook: 'provisioning/playbook.yml'
-ansible_inventory_path: 'provisioning/hosts'
 ansible_config_file: 'provisioning/ansible.cfg'                                                                     
 machines: 
    - ['docker', '192.168.1.42', '1024', '1', 'ubuntu/focal64', '8012']
